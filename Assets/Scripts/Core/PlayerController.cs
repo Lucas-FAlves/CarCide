@@ -16,8 +16,9 @@ public class PlayerController : MonoBehaviour
     }
     
     private void OnMove(InputValue inputValue)
-    {   
+    {
         _rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
+        
     }
 
 }
